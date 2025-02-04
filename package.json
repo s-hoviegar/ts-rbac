@@ -11,7 +11,8 @@
     "lint": "eslint . --ext .ts",
     "pretest": "npm run build && npm run lint",
     "test": "jest --verbose --no-cache",
-    "prepublish": "npm run test"
+    "prepublish": "npm run test",
+    "postinstall": "tsc --outDir ./build"
   },
   "repository": {
     "type": "git",
